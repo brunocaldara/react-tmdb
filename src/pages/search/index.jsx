@@ -20,6 +20,8 @@ const Search = () => {
     useEffect(() => {
         const searchedMoviesUrl = `${apiMovieSearch}?api_key=${apiKey}&query=${query}`
 
+        console.log('teste de build with gitlab actions')
+
         getSearchedMovies(searchedMoviesUrl)
     }, [query])
 
