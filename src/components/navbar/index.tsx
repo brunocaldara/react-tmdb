@@ -14,14 +14,14 @@ const Navbar = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (!search) return
-    navigate(`/search?q=${search}`)
+    navigate(`/react-tmdb/search?q=${search}`)
     setSearch('')
   }
 
   return (
     <nav id='navbar'>
       <h2>
-        <Link to='/'>
+        <Link to='/react-tmdb/'>
           <BiCameraMovie />
           React TMDB
         </Link>
